@@ -100,6 +100,7 @@ nav a {
 
     .nav-title {
         margin-bottom: 20px;
+        text-align: center;
     }
 }
     
@@ -124,11 +125,55 @@ nav a {
         padding: 50px;
     }
     
-    
-
     .nav-title {
         margin-bottom: 20px;
     }
+}
+
+/* main styles */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.features-section {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.features-content {
+    padding: 60px;
+}
+
+.features-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.features-heading {
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+}
+
+.Quick-list {
+    color: #727272;
+}
+
+.of-our {
+    color: #131313;
+}
+
+.features {
+   color: #FF900E;
+}
+
+.features-description {
+    color: #727272;
+    margin-bottom: 24px;
 }
 
 
