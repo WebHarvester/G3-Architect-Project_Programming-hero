@@ -147,26 +147,32 @@ main {
 
 /* Facts styles */
 
-.facts-content{
-    margin-bottom: 60px;
-}
-
 .card-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin-bottom: 30px;
 }
 
+
 .card-container .card {
-    /* border: 1px solid #FF900E; */
+    border: 1px solid #FF900E;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px rgba(1, 1, 1, 0.2);
     padding: 30px;
     text-align: center;
 }
 
-.card-container .card .card-stats {
+.facts-content{
+    margin-bottom: 60px;
+}
+
+.facts-title {
+    margin-bottom: 10px;
+}
+
+
+
+
+.card-container .card-stats {
     font-size: 2.8rem;
     font-weight: 600;
     color: #424242;
@@ -185,11 +191,69 @@ main {
     margin: 0 auto;
 }
 
+/* Sponsor Section */
+
+.sponsor-container {
+    margin-bottom: 130px;
+}
+
+
+.sponsor-content {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.sponsor-title {
+    margin-bottom: 24px;
+}
+
+.sponsor-image-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sponsor-image {
+    filter: grayscale(100%);
+}
+
+.sponsor-image:hover {
+    filter: none;
+}
+
+/* footer section */
+
+footer {
+    max-width: 1440px;
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+}
+
+.footer-description {
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* Responsive making */
+/* Mobile device responsive */
 
 @media screen and (max-width:576px) {
     header {
@@ -214,11 +278,33 @@ main {
     }
     .features-content {
         padding: 20px;
+        
+    }
+
+    .card-container {
+        flex-direction: column;
+        padding: 0 80px;
+        gap: 20px;
+    }
+
+
+    .facts-content {
+        padding: 20px;
+    }
+
+    .sponsor-image-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 20px;
     }
 
 }
     
-
+/* Tablet device responsive */
 @media screen and (min-width:576px) and (max-width: 992px) {
     header {
         padding: 35px;
